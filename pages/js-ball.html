@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>弹力球</title>
+	<style type="text/css">
+		.ball{
+			width: 150px;
+			height: 150px;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+		}
+	</style>
+</head>
+<body>
+	<img src="../images/ball.png" class="ball" id="ball">
+	<script type="text/javascript">
+		var ballobj = document.getElementById("ball");
+		var x = 0;
+		var y = 0;
+		var xv = 30;
+		var yv = 50;
+		var bw = document.documentElement.clientWidth - 150;		//屏幕可视区域宽度
+		var bh = document.documentElement.clientHeight - 150;		//屏幕可视区域高度
+		setInterval("move()",160);
+		function move(){
+			//alert(xv);
+			x += xv;
+			y += yv;
+			//alert(parseInt(ballobj.style.left));
+			if (x >= bw){
+				x = bw;
+				xv = -xv;
+			}
+			if(x <= 0){
+				x=0;
+				xv = -xv;
+			}
+			if(y >= bh){
+				y = bh;
+				yv = -yv;
+			}
+			if(y <= 0){
+				y=0;
+				yv = -yv;
+			}
+			//alert(ballobj.style.left);
+			ballobj.style.left = x+"px";
+			ballobj.style.top = y+"px";
+		}
+	</script>
+</body>
+</html>

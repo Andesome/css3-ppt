@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>balllroll</title>
+	<style type="text/css">
+		.ball{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			border-radius: 50px;
+			background-color: #eee;
+			background:radial-gradient(at 35px 35px,#fff,#FFA000,#FFA000);
+			background:-webkit-radial-gradient(35px 35px,#fff,#FFA000,#FFA000);
+			animation: mymove 5s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes mymove{
+			from {left: 0;top: 0;transform: rotate(0);}
+			to {left: 1000px;top: 400px;transform: rotate(1720deg);}
+		}
+	</style>
+</head>
+<body>
+	
+
+	<div class="ball">
+		
+	</div>
+	
+	
+	<a href="css3-animate.html">返回</a>
+	<a href="js-ball.html">js弹力球</a>
+</body>
+</html>

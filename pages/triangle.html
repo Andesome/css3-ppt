@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>triangle</title>
+		
+		<style type="text/css">
+			.html{
+				font-size: 16px;
+			}
+			.box{
+				min-width: 1000px;
+				text-align: center;
+			}
+			.box .triangle{
+				position: relative;
+				left: 0;
+				top: 0;
+				margin-bottom: 3rem;
+				transition: all ease 1s;
+			}
+			.box .triangle:hover{
+				transform: scale(1.3);
+			}
+			.box .triangle:nth-of-type(1){
+				animation-delay: 0ms;
+				animation: move 1s;
+				animation-fill-mode: forwards;
+			}
+			.box .triangle:nth-of-type(2){
+				animation: move 1s;
+				animation-delay: 50ms;
+				animation-fill-mode: forwards;
+			}
+			.box .triangle:nth-of-type(3){
+				animation: move 1s;
+				animation-delay: 150ms;
+				animation-fill-mode: forwards;
+			}
+			.box .triangle:nth-of-type(4){
+				animation: move 1s;
+				animation-delay: 300ms;
+				animation-fill-mode: forwards;
+			}
+			@keyframes move{
+				from {left: 0;} to {left: 50%;margin-left: -50px;}
+			}
+			.triangle-up{
+				width: 0;
+				height: 0;
+				border-left: 50px solid transparent;
+				border-right: 50px solid transparent;
+				border-bottom:100px solid red;
+			}
+			.triangle-right{
+				width: 0;
+				height: 0;
+				border-top:50px solid transparent;
+				border-bottom: 50px solid transparent;
+				border-left: 100px solid red;
+			}
+			.triangle-down{
+				width: 0;
+				height: 0;
+				border-top:100px solid red;
+				border-right: 50px solid transparent;
+				border-left: 50px solid transparent;
+			}
+			.triangle-left{
+				width: 0;
+				height: 0;
+				border-right: 100px solid red;
+				border-top:50px solid transparent;
+				border-bottom: 50px solid transparent;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+		
+			<p>[上]</p>
+			<div class="triangle triangle-up"></div>
+		
+			<p>[右]</p>
+			<div class="triangle triangle-right"></div>
+			
+			<p>[下]</p>
+			<div class="triangle triangle-down"></div>
+			
+			<p>[左]</p>
+			<div class="triangle triangle-left"></div>
+		</div>
+		
+		<ol>
+			<li><a href="triangle-theory.html">原理</a></li>
+			<li><a href="advantage.html">css绘图优点</a></li>
+			<li><a href="css3-animate.html">css动画</a></li>
+			<li><a href="../index.html">ppt</a></li>
+		</ol>
+		
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css3颜色过渡</title>
+	<style type="text/css">
+	@keyframes example {
+    0% {background-color: red;}
+    50% {background-color: yellow;}
+    100% {background-color: yellowgreen;}
+}
+
+	/* The element to apply the animation to */
+	div {
+	    width: 500px;
+	    height: 500px;
+	    background-color: red;
+	    animation-name: example;
+	    animation-duration: 4s;
+	    animation-direction: alternate;
+	    animation-iteration-count: infinite;
+	}
+	</style>
+</head>
+<body>
+	<div></div>
+	
+	<a href="css3-animate.html">返回</a>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css3动画优点</title>
+		<style type="text/css">
+			html{
+				font-size:14px;
+				font-family: "microsoft yahei";
+			}
+			.ppt-box{
+				padding-top: 2em;
+				font-size:2rem;
+				width: 80%;
+				margin: 0 auto;
+			}
+			.ppt-box h1{
+				text-align: center;
+			}
+			.ppt-box .list{
+				
+			}
+			.ppt-box .list li{
+				margin-top: 1.5rem;
+			}
+			.ppt-box .list li abbr{
+				color: orangered;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="ppt-box">
+			<h1>css3动画优点</h1>
+			
+			<ol class="list">
+				<li>
+					<abbr title="声明式的动画描述比JS模拟的逐帧动画好弄的多">简单</abbr>
+				</li>
+				<li>
+					<abbr title="使用JS对DOM节点操作进行变换会带来大量重排、重绘，而CSS3动画可以比较好的规避这点，甚至可以利用GPU进行加速。">性能好</abbr>
+				</li>
+				<li>
+					<abbr title="在现代PC 浏览器上，CSS3 Animation 和 Transition 好写好用，流畅丝滑，而且动画过程0 GC。当然js 控制DOM动画如果控制好了，不要频繁reflow，动画也流畅。">0 GC</abbr>
+				</li>
+				<li>
+					<abbr title="Android 4.4 以后，系统自带chromium">移动端完美兼容</abbr>
+				</li>
+			</ol>
+		</div>
+		<a href="triangle.html">返回</a>
+	</body>
+</html>
